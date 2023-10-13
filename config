@@ -277,7 +277,7 @@ exec --no-startup-id nm-applet &
 exec_always --no-startup-id feh --bg-scale ~/Picturz/Wallpapers/Edited/ryuk-death-note-tetrad-smerti-riuk-smert-by-ice2.jpg
 
 # Idioma
-exec --no-startup-id setxkbmap -layout latam &
+exec --no-startup-id setxkbmap us &
 
 # touchpad
 exec --no-startup-id synclient TapButton1=1 TapButton2=3 &
