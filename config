@@ -274,7 +274,7 @@ exec --no-startup-id nm-applet &
 # Nitrogen
 # exec --no-startup-id nitrogen --restore &
 #exec_always --no-startup-id feh --bg-scale ~/Picturz/Wallpapers/Edited/arch_perfection_simplicity.png
-exec_always --no-startup-id feh --bg-scale ~/Picturz/Wallpapers/Edited/ryuk-death-note-tetrad-smerti-riuk-smert-by-ice2.jpg
+exec_always --no-startup-id feh --bg-scale ~/Picture/uconsole.jpg
 
 # Idioma
 exec --no-startup-id setxkbmap us &
