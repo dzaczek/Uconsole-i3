@@ -26,7 +26,7 @@ At the moment I'm using  I3-GAPS  [https://github.com/Airblader/i3](https://gith
  mkdir -p build && cd build
  meson ..
  sudo ninja
- sudo apt install i3blocks i3status rofi
+ sudo apt install i3blocks i3status rofi fonts-font-awesome
 
  ```
 open /etc/xdg/lxsession/LXDE-pi/desktop.conf and change windows_manager to i3
