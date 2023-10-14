@@ -108,13 +108,33 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Screenshot
-set $screenshot --no-startup-id gnome-screenshot
-set $screenshot-media --no-startup-id gnome-screenshot -i
+## Screenshot
+#set $screenshot --no-startup-id gnome-screenshot
+#set $screenshot-media --no-startup-id gnome-screenshot -i
+#
+#bindsym Print exec $screenshot
+##bindsym Shift+Print exec $screenshot-media
+#bindsym $mod+Print exec $screenshot-media
+#
+#bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+#bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+#bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
 
-bindsym Print exec $screenshot
-#bindsym Shift+Print exec $screenshot-media
-bindsym $mod+Print exec $screenshot-media
+
+
+###  Screenshots in files
+bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
+bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
+bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
+#
+## Screenshots in clipboards
+bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
+
+
+
+
 
 # Posistion Floating Windows Left/Right
 bindsym $mod+Shift+p floating enable; border none; resize set 695px 267px; sticky disable; move window to position 709 px 230 px
@@ -139,7 +159,7 @@ bindsym XF86AudioPrev  exec --no-startup-id mocp -r
 bindsym XF86AudioStop  exec --no-startup-id mocp -s
 
 # Calculadora
-bindsym XF86Calculator exec --no-startup-id gnome-calculator
+#bindsym XF86Calculator exec --no-startup-id gnome-calculator
 
 # nombres del area de trabajo
 set $workspace1 "1: "
@@ -266,7 +286,7 @@ bar {
 hide_edge_borders both
 
 # Red
-exec --no-startup-id nm-applet &
+#exec --no-startup-id nm-applet &
 
 # Volumen
 # exec --no-startup-id volumeicon &
@@ -275,7 +295,7 @@ exec --no-startup-id nm-applet &
 # Nitrogen
 # exec --no-startup-id nitrogen --restore &
 #exec_always --no-startup-id feh --bg-scale ~/Picturz/Wallpapers/Edited/arch_perfection_simplicity.png
-exec_always --no-startup-id feh --bg-scale ~/Picture/uconsole.jpg
+#exec_always --no-startup-id feh --bg-scale ~/Picture/uconsole.jpg
 
 # Idioma
 exec --no-startup-id setxkbmap us &
