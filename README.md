@@ -1,6 +1,7 @@
 # Uconsole-i3
 I3 windows manager on Uconsole  device 
 
+![SCREENSHOT](./screen.png)
 
 ## Usage
 Feel free to fork and modify this configuration to suit your needs. If you're new to i3 like I , take your time to understand how each section works and tailor it to your preferences.
