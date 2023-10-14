@@ -13,7 +13,7 @@
 
 exec --no-startup-id xrandr --output DSI-1 --rotate right
 
-exec_always --no-startup-id feh --bg-scale  ~/Pictures/uconsole.jpg
+exec_always --no-startup-id feh --bg-scale  ~/.config/i3/wallp/mur1.png
 
 set $mod Mod1
 
