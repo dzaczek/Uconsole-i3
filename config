@@ -313,4 +313,6 @@ exec --no-startup-id picom --config ~/.config/compton.conf &
 # Autostart
 #exec --no-startup-id firefox &
 #exec --no-startup-id /home/ice/.Telegram/Telegram &
+
+
 exec --no-startup-id numlockx &
