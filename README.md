@@ -42,8 +42,9 @@ vim /etc/xdg/lxsession/LXDE-pi/autostart
 #@lxpanel --profile LXDE-pi
 #@pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
-### Confiure and isntall SuckLess Termianl
 ```
+### Confiure and isntall SuckLess Termianl
+
 
 ### Configure and install SuckLess Terminal
 ```bash
