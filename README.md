@@ -35,8 +35,17 @@ open /etc/xdg/lxsession/LXDE-pi/desktop.conf and change windows_manager to i3
 [Session]
 window_manager=i3
 ```
-### Confiure and isntall SuckLess Termianl
 
+open file /etc/xdg/lxsession/LXDE-pi/autostart and hash lines lxpanel and pcmanfm 
+```bash
+vim /etc/xdg/lxsession/LXDE-pi/autostart
+#@lxpanel --profile LXDE-pi
+#@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+### Confiure and isntall SuckLess Termianl
+```
+
+### Configure and install SuckLess Terminal
 ```bash
 sudo -i 
 cd Documnets 
